@@ -34,6 +34,7 @@ class Fibonacci {
 
             for (int i = 3; i <= n; i++) {
                 fib = fib1 + fib2;
+                System.out.println("Фібоначчі(" + i + "): " + fib1 + " + " + fib2 + " = " + fib);
 
                 if (isW3Plus1(fib)) {
                     individualQuest.add("Фібоначчі(" + i + ") = " + fib);
@@ -94,6 +95,7 @@ class Lucas {
                 luc = luc1 + luc2;
                 luc1 = luc2;
                 luc2 = luc;
+                System.out.println("Число Люка(" + i + "): " + luc1 + " + " + luc2 + " = " + luc);
             }
 
             return luc;
